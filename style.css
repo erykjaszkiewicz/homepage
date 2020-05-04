@@ -1,0 +1,40 @@
+body {
+    background: rgb(100, 96, 96);
+}
+
+h1  {
+    color: whitesmoke;
+    text-align: center;
+}
+p {
+    color:white;
+}
+h2 {
+    color: white;
+}
+h3 {
+    color: white;
+}
+.head {
+    color: white;
+}
+.main {
+    background-color: wheat;
+    text-align: center;
+}
+#notatki {
+    background-color: yellow;
+}
+img {
+    display: flex;
+}
+nav {
+    text-align: center;
+}
+footer {
+    text-align: center;
+}.imgClarinett {
+    width: 720px;
+    height: 300px;
+    
+}
