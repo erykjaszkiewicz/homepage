@@ -16,25 +16,54 @@ h3 {
     color: rgb(219, 212, 212);
 }
 .head {
-    color: white;
+    color: rgb(204, 39, 39);
 }
 .main {
     background-color: wheat;
     text-align: center;
 }
-#notatki {
+.notatki {
     background-color: rgb(190, 190, 96);
 }
-img {
-    display: flex;
-}
-nav {
+.notatki__title{
     text-align: center;
 }
+.background{
+    display: flex;
+    text-align: center;
+    width: 600px;
+    height: 400px;
+    padding-left: 430px;
+}
+.navigation {
+    text-align: center;
+    background: rgb(53, 139, 19);
+}
+.navigation__link {
+    padding: 14px;
+    color: white;
+}
+.navigation__link--home {
+    color: red;
+    background: white;
+}
+
 footer {
     text-align: center;
 }.imgClarinett {
     width: 720px;
     height: 300px;
     
+}
+.week-summary {
+    border-radius: 12px;
+    border: 2px solid white;
+    margin-bottom: 6px;
+}
+.week-summary__title{
+    color: rgb(12, 56, 136);
+    padding-left: 7px;
+}.week-summary__description{
+    color: rgb(230, 243, 242);
+    padding-left: 7px;
 }
