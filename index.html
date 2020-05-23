@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <header>
-      <nav class="navigation">
-        <a class="navigation__link navigation__link--home" href="index.html">Strona główna</a>
+    <header class="header">
+      <nav class="navigation navigation--js">
+        <a class="navigation__link" href="index.html">Strona główna</a>
         <a class="navigation__link" href="nauka-html.html">Nauka</a>
         <a class="navigation__link" href="pasja.html">Moja pasja</a>
-        <a class="navigation__link" href="#header">Przrjdź poniżej</a>
+        <a class="navigation__link" href="formularz.html">Formularz</a>
+        <a class="navigation__link" href="#header">Przejdź poniżej</a>
       </nav>
+      <button class="hamburger hamburger--js">menu</button>
     </header>
-    <main>
+    <main class="side">
       <header>
-        <h1 class="head">Eryk Jaszkiewicz - Strona Domowa WTF </h1>
+        <h1 class="head main__heading--js">Eryk Jaszkiewicz - Strona Domowa WTF </h1>
+        <button class="action--js">Zmień nagłówek</button>
       </header>
 
       <section class="main">
-        <h2>Kim jestem?</h2>
-        <img class="background" src="background.jpg" alt="zdjęcie" />
-        <p>
+        <h2 class="main_h2">Kim jestem?</h2>
+        <img class="background" src="eryk.jpeg" alt="zdjęcie" />
+        <p class="main_akapit">
           Jestem osobą bardzo kreatywną, która potrafi myśleć analitycznie.
           Lubię <a href="https://www.youtube.com/?hl=pl&gl=PL">muzykę.</a>
           <a href="#notatki">Przejdź do notatek</a>
@@ -36,15 +40,36 @@
         <h2 class="notatki__title">Notatki z WTF" Co to ten frontend?</h2>
         <article class="week-summary">
           <h3 class="week-summary__title">Jak stworzyć prawidłowego htmla?</h3>
+
           <p class="week-summary__description">
             nfjdnjfndjfdnnfjdjfnjdfnjd ng jngjdg
             ndgnjdgnjdngjndjgnjdnjgdgnjdgnjdngjd gnjndjgnjdngjdnjg dgjndjgn
             jgndjgdjg
+         <table class="table">
+           <caption>Rozpiska WTF</caption>
+           <thead>
+             <tr>
+               <th>Tydzień</th>
+               <th>Lekcja</th>
+               <th>Czas trawnia</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>1</td>
+               <td>WTF INTRO</td>
+               <td>5:00</td>
+             </tr>
+           </tbody>
+         </table>
+            
           </p>
+          <p class="week-summary__description week-summary__description--js"></p>
         </article>
         <article class="week-summary">
           <h3 class="week-summary__title">Odrabianie pracy domowe?</h3>
           <p class="week-summary__description">Odrabianie pracy domowej idzie mi bardzo dobrze.</p>
+          <p class="week-summary__description week-summary__description--js2"></p>
         </article>
         <article class="week-summary">
           <h3 class="week-summary__title">Czy nagywanie szkolenia to prosta sprawa?</h3>

@@ -7,6 +7,7 @@
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <header>
         <nav class="navigation">
@@ -14,7 +15,7 @@
             <a class="navigation__link" href="nauka-html.html">Nauka</a>
             <a class="navigation__link" href="pasja.html">Moja pasja</a>
             <a class="navigation__link" href="formularz.html">Formularz</a>
-
+    
             <a class="navigation__link" href="#header">Przejdź poniżej</a>
           </nav>
     </header>
@@ -23,23 +24,24 @@
             <h1>Moja pasja</h1>
         </header>
         <div class="formDiv">
-        <form>
-            <p>
-                <label for="firstName">Your Name:</label>
-                <input type="text" value="Maciek" placeholder="Please enter your name" id="firstName" name="firstName"></p>
-                <p>
-                <label>Your last Name:
-
-                <input id="lastName" placeholder="Please enter your last name" name="lastName"></p>
-            </label>
-        </p>
-        </form>
-
+        
+            <form action="https://dev.cotenfrontend.pl/">
         <fieldset class="form1">
             <legend>Adress</legend>
+            
+                <p>
+                    <label for="firstName">Your Name:</label>
+                    <input class="nameP" "type="text" value="Maciek" placeholder="Please enter your name" id="firstName" name="firstName"></p>
+                    <p>
+                    <label>Your last Name:
+    
+                    <input required class="nameP" id="lastName" placeholder="Please enter your last name" name="lastName"></p>
+                </label>
+            </p>
+            
             <p>
                 <label>Street name
-                <input required class="form_item" placeholder="Please enter your Street name" id="StreetName" name="streetName"></p>
+                <input class="form_item" placeholder="Please enter your Street name" id="StreetName" name="streetName"></p>
                 
                 </label>
             </p>
@@ -48,6 +50,11 @@
                     <input class="form_item" placeholder="Please enter your City" id="city" name="city"></p>
                     </label>
                     </p>
+                    <p>
+                        <label>Postal code
+                        <input class="form_item" pattern="[0-9]{2}-[0-9]{3}" id="postalCode" name="postalCode"></p>
+                        </label>
+                        </p>
                     <p>
                         <label>Number: <input class="form_item" name="number" checked type="number" value=""></label>
                      </p>
@@ -78,9 +85,7 @@
                         <label for="yourStory">Your story: </label>
                         <textarea class="textarea" id="yourStory" name="yourStory"  type="textarea" value="">My story is ...</textarea>
                      </p>
-                     <p>
-                         <input class="form_item" name="submit"  type="submit" value="Send">
-                     </p>
+                    
                     </label>
         </fieldset>
         <fieldset class="form1">
@@ -98,24 +103,16 @@
         <fieldset class="form1">
             <legend>Favourite icecream Flavour</legend>
             <p>
-               <label> <input name="agreement" checked type="checkbox" value="agree">I agree</label>
+               <label> <input name="agreement" checked type="checkbox" value="">I agree</label>
             </p>
           
         </fieldset>
+        <p>
+            <input class="form_item" name="submit"  type="submit" value="Send">
+        </p>
+    </form>
     </div>
-        <section class="playThePiano">
-            <h2>Gry na instrumencie</h2>
-            <article>
-                <h3>Pianino</h3>
-                <p>Ukończyłem Szkołem Muzyczną I st. na instumencie pianino.</p>
-                <img src="pianino.jpg" alt="pianino"/>
-            </article>
-        </section>
-        <section class="playTheClarrinette">
-            <h3>Klarnet</h3>
-            <p>Gram na klarnecie w Orkiestrze OSP</p>
-            <img src="klarnet.jpg" class="imgClarinett" alt="klarnet"/>
-        </section>
+        
     </main>
     <script src="pasja.js"></script>
 </body>

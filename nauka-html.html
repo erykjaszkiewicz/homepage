@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Document</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
     <header>
-      <nav>
-        <a href="index.html">Strona główna</a>
-        <a href="nauka-html.html">Nauka</a>
-        <a href="pasja.html">Moja Pasja</a>
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="nauka-html.html">Nauka</a>
+        <a class="navigation__link" href="pasja.html">Moja pasja</a>
+        <a class="navigation__link" href="formularz.html">Formularz</a>
+
+        <a class="navigation__link" href="#header">Przejdź poniżej</a>
       </nav>
     </header>
     <main>
@@ -32,9 +36,9 @@
 
       <section id="notatki">
         <h2>Notatki z WTF" Co to ten frontend?</h2>
-        <article>
+        <article class="note">
           <h3>Jak stworzyć prawidłowego htmla?</h3>
-          <p>
+          <p class="note_p">
             nfjdnjfndjfdnnfjdjfnjdfnjd ng jngjdg
             ndgnjdgnjdngjndjgnjdnjgdgnjdgnjdngjd gnjndjgnjdngjdnjg dgjndjgn
             jgndjgdjg
