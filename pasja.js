@@ -1,4 +1,8 @@
 //podejrzenie range
-const myRange = document.querySelector('.range--js');
+var cowsay = require("cowsay");
 
-console.log(myRange.value)
+console.log(cowsay.say({
+	text : "I'm a moooodule",
+	e : "oO",
+	T : "U "
+}))

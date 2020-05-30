@@ -1,163 +1,197 @@
 html {
-    box-sizing: border-box;
-   }
-   *, *:before, *:after {
-    box-sizing: inherit;
-   }
-   
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
 body {
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,33,0.8690826672465861) 55%, rgba(0,212,255,1) 100%);
-}
-.background{
-    display: block;
-    max-width: 100%;
-}
+  background: linear-gradient(90deg, #020024 0%, rgba(9, 121, 33, 0.869083) 55%, #00d4ff 100%); }
+
+.background {
+  display: block;
+  max-width: 100%; }
+
 .form1 {
-    color: white;
-    
-}
+  color: white; }
+
 .form_item {
-    display: block;
-}
+  display: block; }
+
 .formDiv {
-    width: auto;
-}
+  width: auto; }
 
-h1  {
-    color: whitesmoke;
-    text-align: center;
-}
+h1 {
+  color: whitesmoke;
+  text-align: center; }
+
+h1 ::before {
+  content: 'test'; }
+
 p {
-    color:white;
-}
+  color: white; }
+
 h2 {
-    color: white;
-}
+  color: white; }
+
+h2:hover {
+  color: red; }
+
+h2::before {
+  display: block;
+  content: '   ';
+  border: 6px solid red;
+  border-radius: 50px; }
+
 h3 {
-    color: rgb(219, 212, 212);
-}
+  color: #dbd4d4; }
+
+h3::before {
+  content: '';
+  border: 5px solid black; }
+
 .textarea {
-    display: block;
-}
+  display: block; }
+
 .head {
-    color: rgb(241, 241, 241);
-    background: rgba(197, 209, 199, 0.869);
+  color: #f1f1f1;
+  background: rgba(197, 209, 199, 0.869); }
 
-}
 .header {
-    background: white;
-    min-height: 60px;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  background: white;
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
-}
 .header-link {
-    color: teal;
-}
+  color: teal; }
+
 .hamburger {
-    position: absolute;
-    top:16px;
-    right: 16px;
-}
+  position: absolute;
+  top: 16px;
+  right: 16px; }
+
 .main {
-    max-width: 1000px;
-    margin: 60px auto 0;
-    
-   
-}
+  max-width: 1000px;
+  margin: 60px auto 0; }
+
 .main_h2 {
-    max-width: 1400px;
-    margin: auto;
-}
+  max-width: 1400px;
+  margin: auto; }
+
 .main_akapit {
-background-color: rosybrown;
-}
-   
-.navigation--open  {
-    display: block; 
-}
+  background-color: rosybrown; }
 
-.notatki__title{
-    text-align: center;
-}
-.nameP {
-    display: block;
-}
-.background{
-    
-    text-align: center;
-    width: 300px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    border: 3px solid white;
-    border-radius: 3px;
-    margin: auto;
-    color: rgba(0, 0, 0, 0.4);
-    
-}
 .navigation {
-    padding: 16px;
-    display: none;
-    
-}
+  display: none; }
+
+.navigation--open {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  top: 50px;
+  border: none;
+  z-index: 30;
+  padding: 1vw;
+  background-color: white; }
+
+.notatki__title {
+  text-align: center; }
+
+.nameP {
+  display: block; }
+
+.background {
+  text-align: center;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 3px;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.4); }
+
 .navigation__link {
+  color: white;
+  display: block;
+  margin: 0 0 16px;
+  background: darkblue;
+  text-align: center;
+  text-decoration: none; }
 
-    color: red;
-    display: block;
-    margin: 0 0 16px;
+.navigation__link:hover {
+  background: blue; }
 
-
-}
 .note_p {
-    color: rosybrown;
-}
-
+  color: rosybrown; }
 
 footer {
-    text-align: center;
-}.imgClarinett {
-    width: 720px;
-    height: 300px;
-    
-}
+  text-align: center; }
+
+.imgClarinett {
+  width: 720px;
+  height: 300px; }
+
 .week-summary {
-    border-radius: 12px;
-    border: 2px solid white;
-    margin-bottom: 6px;
-}
-.week-summary__title{
-    color: rgb(12, 56, 136);
-    padding-left: 7px;
-}.week-summary__description{
-    color: rgb(230, 243, 242);
-    padding-left: 7px;
-    filter: blur(1px);
-    transition: filter 0.5s ease-in-out;
-}
+  border-radius: 12px;
+  border: 2px solid white;
+  margin-bottom: 6px; }
+
+.week-summary::before {
+  content: "*"; }
+
+.week-summary::after {
+  content: "Goodbay"; }
+
+.week-summary__title {
+  color: #0c3888;
+  padding-left: 7px; }
+
+.week-summary__description {
+  color: #e6f3f2;
+  padding-left: 7px;
+  filter: blur(1px);
+  transition: filter 0.5s ease-in-out; }
+
 .week-summary__description:hover {
-    filter: blur(0);
-  }
+  filter: blur(0); }
+
 .side {
-    max-width: 1000px;
-    margin: 0 auto;
-}
+  max-width: 1000px;
+  margin: 0 auto; }
+
 .table {
-    width: 100%;
-    border: 1px solid black;
-}
+  width: 100%;
+  border: 1px solid black; }
+
 .klasa-z-js {
-    background: yellow;
-}
+  background: yellow; }
 
 @media (min-width: 768px) {
-    .navigation {
-        padding: 12px;
-        border-radius: 8px;
-        display: flex;
-        justify-content: space-around ;
-        height:50px ;
-        align-items: center;
-}
-}
+  .navigation {
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center; }
+  .notatki {
+    display: grid; }
+  .change {
+    display: none; }
+  .hamburger {
+    display: none; }
+  .navigation__link {
+    color: white;
+    display: block;
+    margin: 16px 0 16px; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px; } }
